@@ -1,0 +1,15 @@
+{% extends 'JustMyBiologyJournal/base.html' %}
+
+{% block title %}Create post - MBJ{% endblock %}
+
+{% block body %}
+
+<div class="all-posts">
+	{% for post in posts %}
+		<div class="post">
+			{{ post }}
+		</div>
+	{% endfor %}
+</div>	
+
+{% endblock %}
